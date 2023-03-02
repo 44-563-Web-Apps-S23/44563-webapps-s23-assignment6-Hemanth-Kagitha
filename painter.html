@@ -33,11 +33,25 @@ function  checkPainter(){
     if(password == guess) {
         good = good + 1;
         alert("You got it right");
-        document.getElementById("result").innerHTML=good;
+        //document.getElementById("result").innerHTML=good;
     } else {
         oops = oops + 1;
         alert("Sorry");
-        document.getElementById("result").innerHTML=oops;
+        //document.getElementById("result").innerHTML=oops;
+    }
+    document.getElementById("result").innerHTML='Right count : ' + good + '.<br> Wrong count : ' + oops+'.';
+}
+function selectImage(){
+    switch (useImage){
+        case 1: useImage=useImage+1
+        image.src="KNIPHOFIA.jpg";
+        break;
+        case 2: useImage=useImage+1
+        image.src="ALOE.jpg";
+        break;
+        case 3: useImage=useImage+1
+        image.src="GAILLARDIA.jpg";
+        break;
     }
 }
 </script>
